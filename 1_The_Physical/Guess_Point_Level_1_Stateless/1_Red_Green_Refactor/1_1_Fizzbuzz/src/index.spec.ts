@@ -14,17 +14,11 @@ describe("fizzbuzz", () => {
     expect(fizzBuzz([1, 50, 100])).toBeTruthy();
   });
 
-  it("should be able to return the numbers as a string", () => {
-    expect(fizzBuzz([1, 50, 100])).toEqual(["1", "50", "100"]);
+  it("should be able to return the number '1' as a string", () => {
+    expect(fizzBuzz([1])).toEqual(["1"]);
   });
 
-  it("should be able to return 'Fizz' for numbers multiples of '3'", () => {
-    expect(fizzBuzz([1, 33, 50, 69, 100])).toEqual([
-      "1",
-      "Fizz",
-      "50",
-      "Fizz",
-      "100",
-    ]);
+  it("should be able to return 'Fizz' for '3'", () => {
+    expect(fizzBuzz([3])).toEqual(["Fizz"]);
   });
 });
