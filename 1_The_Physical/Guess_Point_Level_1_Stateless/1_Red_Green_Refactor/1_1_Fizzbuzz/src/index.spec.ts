@@ -9,4 +9,8 @@ describe("fizzbuzz", () => {
   it("should be able to tell that the number '101' is not in range", () => {
     expect(() => fizzBuzz([101])).toThrow(Error("Number out of range"));
   });
+
+  it("should be able to tell that the numbers '1', '50' and '100' are in range", () => {
+    expect(fizzBuzz([1, 50, 100])).toBeTruthy();
+  });
 });
