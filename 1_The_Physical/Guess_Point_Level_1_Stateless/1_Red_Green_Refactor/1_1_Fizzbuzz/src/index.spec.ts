@@ -25,4 +25,8 @@ describe("fizzbuzz", () => {
   it("should be able to return 'Buzz' for '5'", () => {
     expect(fizzBuzz([5])).toEqual(["Buzz"]);
   });
+
+  it("should be able to return 'FizzBuzz' for '30'", () => {
+    expect(fizzBuzz([30])).toEqual(["FizzBuzz"]);
+  });
 });
