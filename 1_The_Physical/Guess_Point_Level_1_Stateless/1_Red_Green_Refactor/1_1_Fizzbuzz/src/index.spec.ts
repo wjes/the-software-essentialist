@@ -13,4 +13,8 @@ describe("fizzbuzz", () => {
   it("should be able to tell that the numbers '1', '50' and '100' are in range", () => {
     expect(fizzBuzz([1, 50, 100])).toBeTruthy();
   });
+
+  it("should be able to return the numbers as a string", () => {
+    expect(fizzBuzz([1, 50, 100])).toEqual(["1", "50", "100"]);
+  });
 });
