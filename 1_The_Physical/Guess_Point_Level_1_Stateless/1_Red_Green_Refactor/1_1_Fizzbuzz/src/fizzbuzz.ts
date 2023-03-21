@@ -1,14 +1,14 @@
 export function fizzBuzz(numbers: number[]): string[] {
-  for (const number of numbers)
-    if (number < 1 || number > 100) throw new Error("Number out of range");
+  for (const num of numbers)
+    if (num < 1 || 100 < num) throw new Error("Number out of range");
 
-  return numbers.map((number) =>
-    (number % 3) + (number % 5) === 0
+  return numbers.map((num) =>
+    (num % 3) + (num % 5) === 0
       ? "FizzBuzz"
-      : number % 3 === 0
+      : num % 3 === 0
       ? "Fizz"
-      : number % 5 === 0
+      : num % 5 === 0
       ? "Buzz"
-      : String(number)
+      : String(num)
   );
 }

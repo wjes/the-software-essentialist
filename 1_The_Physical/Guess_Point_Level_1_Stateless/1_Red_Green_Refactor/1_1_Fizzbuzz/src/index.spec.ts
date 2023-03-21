@@ -11,7 +11,7 @@ describe("fizzbuzz", () => {
   });
 
   it("should be able to tell that the numbers '1', '50' and '100' are in range", () => {
-    expect(fizzBuzz([1, 50, 100])).toBeTruthy();
+    expect(() => fizzBuzz([1, 50, 100])).not.toThrow();
   });
 
   it("should be able to return the number '1' as a string", () => {
