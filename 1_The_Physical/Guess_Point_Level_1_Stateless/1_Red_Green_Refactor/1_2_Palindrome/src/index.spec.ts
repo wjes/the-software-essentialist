@@ -9,5 +9,9 @@ describe("palindrome checker", () => {
   it("should be able to tell that the 'bill' is not a palindrome", () => {
     expect(palindrome("bill")).toBeFalsy();
   });
+
+  it("should be able to tell that the 'Mom' is a palindrome", () => {
+    expect(palindrome("Mom")).toBeTruthy();
+  });
 });
 
