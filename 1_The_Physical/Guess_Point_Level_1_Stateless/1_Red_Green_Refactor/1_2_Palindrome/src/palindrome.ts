@@ -1,5 +1,5 @@
 export function palindrome(str: string) {
-  if (str === "bill") return false;
+  if (str.split("").reverse().join("") === str) return true;
 
-  return true;
+  return false;
 }
